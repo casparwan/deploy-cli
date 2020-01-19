@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+const program = require('commander');
+const package = require('../package.json');
+
+// 定义当前版本
+program
+    .version(package.version)
+program
+    .usage('<command>')
+program
+    .command('init')
+    .description('初始化前端部署脚本')
+    //.alias('i')
+    .action(()=>{
+        require('../commander/init')
+    })
+program
+    .command('development')
+    .description('部署到开发环境')
+    .alias('dev')
+    .action(()=>{
+        require('../commander/dev')
+    })
+program.parse(process.argv);
+// if (!program.args.length) {
+//     program.help()
+// }

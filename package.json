@@ -1,0 +1,28 @@
+{
+  "name": "deploy-cli",
+  "version": "1.0.0",
+  "description": "前端静态文件部署脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "caspar": "bin/caspar"
+  },
+  "repository": "",
+  "keywords": [
+    "脚手架",
+    "前端部署"
+  ],
+  "author": "caspar",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.3",
+    "node-ssh": "^7.0.0",
+    "ora": "^4.0.3",
+    "shelljs": "^0.8.3"
+  }
+}
