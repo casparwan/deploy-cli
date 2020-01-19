@@ -9,7 +9,7 @@
   "bin": {
     "caspar": "bin/caspar"
   },
-  "repository": "",
+  "repository": "https://github.com/casparwan/deploy-cli.git",
   "keywords": [
     "脚手架",
     "前端部署"
