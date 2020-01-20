@@ -6,9 +6,8 @@ const chalk = require('chalk');
 const ora = require('ora');
 const spinner = ora();
 
-const exists = fs.existsSync(path.resolve(__dirname, 'deploy'))
-if (exists) {
-    console.log(chalk.red('部署配置文件deploy.config.js已存在,请检查!'));
+if (fs.existsSync(path.resolve(__dirname, '../deploy/deploy.config.js'))) {
+    console.log(chalk.red('部署配置文件deploy.config.js已存在,请配置服务器相关信息, 然后执行caspar dev'));
     process.exit(1);
 }
 if (!shell.which('git')) {

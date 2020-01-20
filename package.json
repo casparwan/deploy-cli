@@ -1,6 +1,6 @@
 {
-  "name": "deploy-cli",
-  "version": "1.0.0",
+  "name": "caspar-deploy-cli",
+  "version": "2.0.1",
   "description": "前端静态文件部署脚手架",
   "main": "index.js",
   "scripts": {
